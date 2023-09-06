@@ -5,11 +5,29 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
 </head>
+<style>
+  .div-style {
+    background-color: #424242;
+    color: #fff;
+    margin: 10px;
+    padding: 5px;
+    border-radius: 10px;
+  }
+  .div-style > h4{
+    text-align: center;
+  }
+</style>
 <body>
-  <button onclick="loadUsers()">Load Users</button>
-  <button onclick="loadData()">Load-Data</button>
-  <button onclick="loadData2()">Load-Data 2</button>
-  <script src="fetch.js"></script>
-  <script src="app.js"></script>
+  <button id="loadUsers" onclick="loadUsers()">Load Users</button>
+  <button id="loadUsers2" onclick="loadUsers2()">Load Users 2</button>
+  <button id="loadData" onclick="loadData()">Load-Data</button>
+  <button id="loadData2" onclick="loadData2()">Load-Data 2</button>
+
+  <div id="container">
+
+  </div>
+
+  <script src="index.js"></script>
+  <script src="get.js"></script>
 </body>
 </html>
